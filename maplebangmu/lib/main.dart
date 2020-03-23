@@ -14,6 +14,8 @@ class BangmuCalc extends StatelessWidget {
   }
 }
 class TabControler extends StatelessWidget{
+  final mainKey = GlobalKey<ScaffoldState>();
+
   @override
   Widget build(BuildContext context) {
     final tabs = [
@@ -30,6 +32,7 @@ class TabControler extends StatelessWidget{
     return DefaultTabController(
       length: tabs.length,
       child: Scaffold(
+        key: mainKey,
         appBar: AppBar(
             automaticallyImplyLeading: false,
             title: Text('메이플 방무 계산기 Expansion'),

@@ -1146,6 +1146,7 @@ class DisplayBangmu extends StatefulWidget{
   State<StatefulWidget> createState() => DisplayBangmuState();
 }
 class UndisplayBangmuState extends State<UndisplayBangmu> {
+
   // form을 저장하기 위한 키
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   Data data = Data();
